@@ -5,6 +5,7 @@ RUN apk update && \
   apk add git && \
   apk add python && \
   apk add make gcc g++ paxctl curl && \
+  apk add graphicsmagick && \
   rm -rf /var/cache/apk/*
 
 RUN mkdir -p /usr/src/app
