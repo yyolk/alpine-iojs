@@ -1,5 +1,7 @@
 FROM mhart/alpine-iojs:latest
 
+RUN echo "@testing http://dl-4.alpinelinux.org/alpine/edge/testing/" >> /etc/apk/repositories
+
 RUN apk update && \
   apk add bash && \
   apk add git && \
